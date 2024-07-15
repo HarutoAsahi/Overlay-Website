@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>Overlay</title>
+        <link rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            body, html{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background: rgba(132, 85, 226, 0.6);
+                color: lightpink;
+                padding: 10px;
+                text-align: center;
+            }
+            main{
+                padding: 20px;
+            }
+            footer{
+                background-color: rgba(132, 82, 226, 0.6);
+                color: lightpink;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium';
+                font-size: 20px;
+                color: deeppink;
+                background: linear-gradient(100deg, lightskyblue, pink);
+                animation: gradientAnimation 8s infinite;
+                background-size: 600% 600%;
+                }
+                
+            @keyframes gradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+        </style>
+        <style>
+            .overlay{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-gap: 20px;
+                padding: 20px;
+            }
+            .video-container, .chat-container{
+                border: 1px solid rgb(255, 170, 170);
+                padding: 10px;
+                font-size: 18px;
+            }
+            .video-container iframe, .chat-container iframe{
+                width: 100%;
+                height: 300px;
+            }
+            .info-container{
+                border: 1px solid rgb(255, 170, 170);
+                padding: 10px;
+            }
+            .info-container h2{
+                margin-top: 0;
+            }
+            .style{
+                display: flex;
+                justify-content: left;
+                text-align: center;
+                }
+        </style>
+        <header>
+            <h1>Overlay Website</h1>
+            <!--navigation links if needed-->
+        </header>
+        <ol type="i">
+            <li>""</li>
+            <li>""</li>
+            <li>""</li>
+        </ol>
+        <div class="overlay">
+            <div class="video-container">
+                <!--Video Player embed code goes here-->
+                <pre style="font-family: 'Times New Roman';"></pre>
+                <div></div>
+                <p>
+                    <h4>Numbers in Korean</h4>
+                    <ol type="I">
+                        <li >1"Hana/Il"</li>
+                        <li >2"Dul/I"</li>
+                        <li >3"Set/Sam"</li>
+                        <li >4"Net/Sa"</li>
+                        <li >5"Daseot/O"</li>
+                        <li >6"Yeoseot/Yuk"</li>
+                        <li >7"Ilgop/Chil"</li>
+                        <li >8"Yeodeol/Pal"</li>
+                        <li >9"Ahop/Gu"</li>
+                        <li>10"Yeol/Sip"</li>
+                        <li>11"Yeol-hana/Sib-il"</li>
+                        <li>12"Yeol-dul/Sib-i"</li>
+                        <li>13"Yeol-set/Sip-sam"</li>
+                        <li>14"Yeol-net/Sip-sa"</li>
+                        <li>15"Yeol-daseot/Sib-o"</li>
+                        <li>16"Yeol-yeoseot/Sip-nyuk"</li>
+                        <li>17"Yeol-ilgop/Sip-chil"</li>
+                        <li>18"Yeol-yeodeol/Sip-pal"</li>
+                        <li>19"Yeol-ahop/Sip-gu"</li>
+                        <li>20"Seumul/I-sip"</li>
+                        <li>30"Seoreun/Sam-sip"</li>
+                        <li>40"Maheun/Sa-sip"</li>
+                        <li>50"Swin/O-sip"</li>
+                        <li>60"Yesun/Yuk-sip"</li>
+                        <li>70"Ilheun/Chil-sip"</li>
+                        <li>80"Yeodeun/Pal-sip"</li>
+                        <li>90"Aheun/Gu-sip"</li>
+                        <li>100"Baek"</li>
+                        <li>1000"Cheon"</li>
+                        <li>10,000"Man"</li>
+                        <li>100,000"Sim-man"</li>
+                        <li>1,000,000"Baeng-man"</li>
+                        <li>10,000,000"Cheon-man"</li>
+                        <li>100,000,000"Ir-eok"</li>
+                        <li>1,000,000,000"Sib-eok"</li>
+                        <li>1,000,000,000,000"Il-jo"</li>
+                        <li>""</li>
+                        <li>""</li>
+                        <li>""</li>
+                    </ol>
+                </p>
+                <style>
+                    .cute-gif{
+                        height: 500px;
+                        width: 600px;
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                    }
+                </style>
+                <h4>'Hello' in Korean</h4>
+                <img src="/home/harutoasahi/Downloads/Learning/Annyeonghaseyo.gif" class="cute-gif" src="Annyeonghaseyo.gif">
+            </div>
+            <div class="chat-container">
+                <!--Chat Widget embed code goes here-->
+                <img src="/home/harutoasahi/Numbers-in-Korean-Language.gif">
+            </div>
+            <div class="info-container">
+                <!--Information Content goes here-->
+                <h2>Title</h2>
+                <p>Additional Information</p>
+            </div>
+        </div>
+        <main>
+            <style>
+                .sorry{
+                    color: rgb(170, 255, 188);
+                    background: linear-gradient(pink,rgb(0, 255, 179));
+                    border-color: green;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 110px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family:'Arial Narrow Bold';
+                }
+                .wonder{
+                    color: rgb(170, 255, 188);
+                    background: linear-gradient(pink,rgb(0, 255, 179));
+                    border-color: green;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 110px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family:'Arial Narrow Bold';
+                }
+                .stranger{
+                    color: rgb(170, 255, 188);
+                    background: linear-gradient(pink,rgb(0, 255, 179));
+                    border-color: green;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 110px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family:'Arial Narrow Bold';
+                }
+                .come-down{
+                    color: rgb(170, 255, 188);
+                    background: linear-gradient(pink,rgb(0, 255, 179));
+                    border-color: green;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 110px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family:'Arial Narrow Bold';
+                }
+                .butter{
+                    color: rgb(170, 255, 188);
+                    background: linear-gradient(pink,rgb(0, 255, 179));
+                    border-color: green;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 110px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family:'Arial Narrow Bold';
+                }
+            </style>
+
+            <ul>
+                <li>Sorry</li>
+                <button class="sorry" onclick="audio.play(Sorry);">
+                    <strong>Play</strong>
+                </button>
+
+                <li>Wonder</li>
+                <button class="wonder" onclick="audio.play(Wonder);">
+                    <strong>Play</strong>
+                </button>
+
+                <li>Stranger</li>
+                <button class="stranger" onclick="audio.play(Stranger);">
+                    <strong>Play</strong>
+                </button>
+
+                <li>Come Down</li>
+                <button class="come-down" onclick="audio.play(Come-Down);">
+                    <strong>Play</strong>
+                </button>
+
+                <li>Butter</li>
+                <button class="butter" onclick="audio.play(Butter);">
+                    <strong>Play</strong>
+                </button>
+            </ul>
+
+                <script>
+                        const audio = new Audio("/home/harutoasahi/Downloads/The Rose Sorry MV.mp3");
+                        audio.src = "/home/harutoasahi/Downloads/The Rose 'Sorry' MV.mp3";
+
+                        const audio = new Audio("/home/harutoasahi/Downloads/The Rose  Wonder Color Coded Lyrics VostfrEng.mp3");
+                        audio.src = "/home/harutoasahi/Downloads/The Rose  Wonder Color Coded Lyrics VostfrEng.mp3";
+
+                        const audio = new Audio("/home/harutoasahi/Downloads/Strangers (타인은 지옥이다).mp3");
+                        audio.src = "/home/harutoasahi/Downloads/Strangers (타인은 지옥이다).mp3";
+
+                        const audio = new Audio("/home/harutoasahi/Downloads/WOOSUNG (김우성) – Come-Down.mp3");
+                        audio.src = "/home/harutoasahi/Downloads/WOOSUNG (김우성) – Come-Down.mp3";
+
+                        const audio = new Audio("/home/harutoasahi/Downloads/BTS-Butter.webm");
+                        audio.src = "/home/harutoasahi/Downloads/BTS-Butter.webm";
+                    </script>
+
+            <!--content here-->
+
+            <p>Some Ideas 😊</p>
+        </main>
+
+        <footer>
+            Overlay
+            <!--footer content here-->
+        </footer>
+    </body>
+</html>
